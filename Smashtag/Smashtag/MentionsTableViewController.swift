@@ -45,6 +45,7 @@ class MentionsTableViewController: UITableViewController {
     private struct Storyboard {
         static let ImageCellIdentifier = "ImageCell"
         static let TextCellIdentifier = "TextCell"
+        static let KeywordSegue = "ShowKeyword"
     }
     
     private var mentionSections: [MentionSection] = []
@@ -117,4 +118,37 @@ class MentionsTableViewController: UITableViewController {
     }
     
 
+    // MARK: - Navitation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == Storyboard.KeywordSegue {
+                if let tweetController = segue.destination as? TweetTableViewController,
+                   let cell = sender as? UITableViewCell,
+                   var text = cell.textLabel?.text {
+                    if text.hasPrefix("@") {
+                        text += " OR from:" + text
+                    }
+                    tweetController.searchText = text
+                }
+            }
+        }
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if let ident = identifier {
+            if ident == Storyboard.KeywordSegue {
+                if  let cell = sender as? UITableViewCell,
+                    let text = cell.textLabel?.text {
+                    if text.hasPrefix("http") {
+                        UIApplication.shared.open(URL(string: text)!, options: [:], completionHandler: nil)
+                        return false
+                    }
+                }
+            }
+        }
+        
+        return true
+    }
+    
 }

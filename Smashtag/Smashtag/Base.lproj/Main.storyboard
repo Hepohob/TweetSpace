@@ -161,6 +161,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.88853482260000005" green="1" blue="0.8879449666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="RqZ-k6-sEc" kind="show" identifier="ShowKeyword" id="DWn-Uh-SeB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -192,4 +195,7 @@
             <point key="canvasLocation" x="400.80000000000001" y="-229.83508245877064"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DWn-Uh-SeB"/>
+    </inferredMetricsTieBreakers>
 </document>
