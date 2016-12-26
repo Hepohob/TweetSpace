@@ -17,20 +17,21 @@ class ImageTableViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var imageDetail: UIImageView!
-
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     private func updateCell() {
+        imageDetail.image = nil
         if let url = urlImage {
             indicator?.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async {
-                let content = try? Data(contentsOf: url)
-                DispatchQueue.main.async {
-                    if let imgData = content {
-                        self.imageDetail.image = UIImage(data: imgData)
+                if let imgData = NSData(contentsOf: url) {
+                    DispatchQueue.main.async {
+                        if url == self.urlImage {
+                            self.imageDetail.image = UIImage(data: imgData as Data)
+                            self.indicator.stopAnimating()
+                        }
                     }
-                    self.indicator.stopAnimating()
-                }
+                }                
             }
         }
     }

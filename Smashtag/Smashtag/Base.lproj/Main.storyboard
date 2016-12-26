@@ -123,24 +123,24 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-Yz-v4U">
-                                            <rect key="frame" x="8" y="8" width="367" height="359.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375.5"/>
                                         </imageView>
                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PSK-wu-CGF">
-                                            <rect key="frame" x="181.5" y="178" width="20" height="20"/>
+                                            <rect key="frame" x="177.5" y="178" width="20" height="20"/>
                                         </activityIndicatorView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="cJM-Yz-v4U" secondAttribute="trailing" id="1pm-fU-JeG"/>
-                                        <constraint firstItem="PSK-wu-CGF" firstAttribute="centerX" secondItem="cJM-Yz-v4U" secondAttribute="centerX" id="HIf-jg-3Bf"/>
-                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="top" secondItem="i90-l2-YJn" secondAttribute="topMargin" id="YxH-KU-izc"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="cJM-Yz-v4U" secondAttribute="bottom" id="iCR-KL-Cm3"/>
-                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="leading" secondItem="i90-l2-YJn" secondAttribute="leadingMargin" id="j0n-UD-Kkv"/>
-                                        <constraint firstItem="PSK-wu-CGF" firstAttribute="centerY" secondItem="cJM-Yz-v4U" secondAttribute="centerY" id="plY-Gb-Xqe"/>
+                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="centerY" secondItem="i90-l2-YJn" secondAttribute="centerY" id="57p-kP-xme"/>
+                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="width" secondItem="i90-l2-YJn" secondAttribute="width" id="9jh-Nc-OTV"/>
+                                        <constraint firstItem="PSK-wu-CGF" firstAttribute="centerX" secondItem="i90-l2-YJn" secondAttribute="centerX" id="AKx-v1-mnS"/>
+                                        <constraint firstItem="PSK-wu-CGF" firstAttribute="centerY" secondItem="i90-l2-YJn" secondAttribute="centerY" id="FxV-4p-Iuk"/>
+                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="height" secondItem="i90-l2-YJn" secondAttribute="height" id="TQF-xU-RCE"/>
+                                        <constraint firstItem="cJM-Yz-v4U" firstAttribute="centerX" secondItem="i90-l2-YJn" secondAttribute="centerX" id="b4h-i2-EGR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.87757012599999995" green="0.93343081729999999" blue="0.96864385190000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="imageDetail" destination="cJM-Yz-v4U" id="fNo-3O-ubc"/>
-                                    <outlet property="imageView" destination="cJM-Yz-v4U" id="Nvv-PG-KoL"/>
+                                    <outlet property="imageDetail" destination="cJM-Yz-v4U" id="QLY-MV-g7b"/>
                                     <outlet property="indicator" destination="PSK-wu-CGF" id="pIK-bG-ZxN"/>
                                 </connections>
                             </tableViewCell>
@@ -160,6 +160,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.88853482260000005" green="1" blue="0.8879449666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
