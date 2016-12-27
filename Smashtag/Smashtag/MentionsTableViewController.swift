@@ -126,6 +126,7 @@ class MentionsTableViewController: UITableViewController {
                         text += " OR from:" + text
                     }
                     tweetController.searchText = text
+                    History.add(text)
                 }
             }
             if identifier == Storyboard.ImageViewSegue {

@@ -14,6 +14,8 @@
 		473109511E117E1300FF89CE /* MentionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473109501E117E1300FF89CE /* MentionsTableViewController.swift */; };
 		473109551E11B0D500FF89CE /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473109541E11B0D500FF89CE /* ImageTableViewCell.swift */; };
 		473A1BB61E11DF7D0069D5DC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */; };
+		473A1BBA1E13136C0069D5DC /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BB91E13136C0069D5DC /* History.swift */; };
+		473A1BBC1E1316D20069D5DC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */; };
 		477070C61E0FB2AF00C6156B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 477070C41E0FB2AF00C6156B /* Model.xcdatamodeld */; };
 		4779058B1E0DA70100FB5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779058A1E0DA70100FB5AA9 /* AppDelegate.swift */; };
 		477905901E0DA70100FB5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4779058E1E0DA70100FB5AA9 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		473109501E117E1300FF89CE /* MentionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsTableViewController.swift; sourceTree = "<group>"; };
 		473109541E11B0D500FF89CE /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		473A1BB91E13136C0069D5DC /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		477070C51E0FB2AF00C6156B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		477905871E0DA70100FB5AA9 /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4779058A1E0DA70100FB5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +75,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4731094F1E115EEC00FF89CE /* CoreData */ = {
+		4731094F1E115EEC00FF89CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				477070C41E0FB2AF00C6156B /* Model.xcdatamodeld */,
@@ -79,8 +83,9 @@
 				473109481E0FDB8400FF89CE /* Tweet+CoreDataProperties.swift */,
 				473109491E0FDB8400FF89CE /* TwitterUser+CoreDataClass.swift */,
 				4731094A1E0FDB8400FF89CE /* TwitterUser+CoreDataProperties.swift */,
+				473A1BB91E13136C0069D5DC /* History.swift */,
 			);
-			name = CoreData;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		473109521E117E1B00FF89CE /* Controller */ = {
@@ -89,6 +94,7 @@
 				4779059D1E0DA77E00FB5AA9 /* TweetTableViewController.swift */,
 				473109501E117E1300FF89CE /* MentionsTableViewController.swift */,
 				473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */,
+				473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -124,7 +130,7 @@
 			children = (
 				473109531E117E3100FF89CE /* Cell */,
 				473109521E117E1B00FF89CE /* Controller */,
-				4731094F1E115EEC00FF89CE /* CoreData */,
+				4731094F1E115EEC00FF89CE /* Model */,
 				4779059C1E0DA71300FB5AA9 /* Support */,
 				4779058E1E0DA70100FB5AA9 /* Main.storyboard */,
 			);
@@ -225,8 +231,10 @@
 				4731094D1E0FDB8400FF89CE /* TwitterUser+CoreDataClass.swift in Sources */,
 				473109551E11B0D500FF89CE /* ImageTableViewCell.swift in Sources */,
 				4731094B1E0FDB8400FF89CE /* Tweet+CoreDataClass.swift in Sources */,
+				473A1BBA1E13136C0069D5DC /* History.swift in Sources */,
 				473A1BB61E11DF7D0069D5DC /* ImageViewController.swift in Sources */,
 				477070C61E0FB2AF00C6156B /* Model.xcdatamodeld in Sources */,
+				473A1BBC1E1316D20069D5DC /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

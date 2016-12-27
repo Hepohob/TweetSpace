@@ -35,6 +35,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
             tweets.removeAll()
             searchForTweets()
             title = searchText
+            History.add(searchText!)
         }
     }
     
