@@ -35,17 +35,13 @@ class MentionsTableViewController: UITableViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
     // MARK: - Inner Model
     
     private struct Storyboard {
         static let ImageCellIdentifier = "ImageCell"
         static let TextCellIdentifier = "TextCell"
         static let KeywordSegue = "ShowKeyword"
+        static let ImageViewSegue = "ImageViewSegue"
     }
     
     private var mentionSections: [MentionSection] = []
@@ -118,18 +114,25 @@ class MentionsTableViewController: UITableViewController {
     }
     
 
-    // MARK: - Navitation
+    // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == Storyboard.KeywordSegue {
                 if let tweetController = segue.destination as? TweetTableViewController,
-                   let cell = sender as? UITableViewCell,
-                   var text = cell.textLabel?.text {
+                    let cell = sender as? UITableViewCell,
+                    var text = cell.textLabel?.text {
                     if text.hasPrefix("@") {
                         text += " OR from:" + text
                     }
                     tweetController.searchText = text
+                }
+            }
+            if identifier == Storyboard.ImageViewSegue {
+                if let ivController = segue.destination as? ImageViewController,
+                    let cell = sender as? ImageTableViewCell,
+                    let image = cell.imageDetail?.image {
+                    ivController.image = image
                 }
             }
         }

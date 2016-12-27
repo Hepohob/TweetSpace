@@ -104,7 +104,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eM7-7W-Itt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="-229.83508245877064"/>
+            <point key="canvasLocation" x="1193" y="-15"/>
         </scene>
         <!--Mentions Table View Controller-->
         <scene sceneID="f43-6j-Ugt">
@@ -119,7 +119,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="847-rJ-6mz" id="i90-l2-YJn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-Yz-v4U">
@@ -142,6 +142,7 @@
                                 <connections>
                                     <outlet property="imageDetail" destination="cJM-Yz-v4U" id="QLY-MV-g7b"/>
                                     <outlet property="indicator" destination="PSK-wu-CGF" id="pIK-bG-ZxN"/>
+                                    <segue destination="bj5-3A-R54" kind="show" identifier="ImageViewSegue" id="zLa-wQ-g4P"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" textLabel="V8x-zf-5kv" style="IBUITableViewCellStyleDefault" id="iTy-YM-rNx">
@@ -174,7 +175,39 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eL-bM-gwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2136.8000000000002" y="-228.03598200899552"/>
+            <point key="canvasLocation" x="2129" y="-434"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="EoE-2g-Hsc">
+            <objects>
+                <viewController id="bj5-3A-R54" customClass="ImageViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zLg-F3-4yy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iyx-5r-OFR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q6P-m5-ecm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8t-uZ-Fon">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B8t-uZ-Fon" firstAttribute="height" secondItem="q6P-m5-ecm" secondAttribute="height" id="DHQ-bK-dgC"/>
+                            <constraint firstItem="B8t-uZ-Fon" firstAttribute="centerX" secondItem="q6P-m5-ecm" secondAttribute="centerX" id="az5-vV-ZuH"/>
+                            <constraint firstItem="B8t-uZ-Fon" firstAttribute="width" secondItem="q6P-m5-ecm" secondAttribute="width" id="oQi-Zk-cIu"/>
+                            <constraint firstItem="B8t-uZ-Fon" firstAttribute="centerY" secondItem="q6P-m5-ecm" secondAttribute="centerY" id="qVn-9X-w3Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="B8t-uZ-Fon" id="mSd-rd-uwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adD-8i-gkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2893.5999999999999" y="-233.43328335832086"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xWj-kA-F2E">
