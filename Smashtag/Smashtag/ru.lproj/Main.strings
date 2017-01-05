@@ -1,0 +1,24 @@
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "FcW-eJ-asD"; */
+"FcW-eJ-asD.title" = "Корневой контроллер";
+
+/* Class = "UILabel"; text = "Created"; ObjectID = "NFX-xq-ocA"; */
+"NFX-xq-ocA.text" = "Создано";
+
+/* Class = "UILabel"; text = "Tweet Text"; ObjectID = "U8O-QI-I2y"; */
+"U8O-QI-I2y.text" = "Текст твита";
+
+/* Class = "UIBarButtonItem"; title = "Tweeters"; ObjectID = "Uda-vg-PO0"; */
+"Uda-vg-PO0.title" = "Твитер";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "V8x-zf-5kv"; */
+"V8x-zf-5kv.text" = "Заголовок";
+
+/* Class = "UITextField"; placeholder = "Twitter search text"; ObjectID = "ZZY-1p-6tJ"; */
+"ZZY-1p-6tJ.placeholder" = "Текст для поиска";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "vo1-q5-mMs"; */
+"vo1-q5-mMs.text" = "Заголовок";
+
+/* Class = "UILabel"; text = "Tweeter"; ObjectID = "zO3-tV-c0Q"; */
+"zO3-tV-c0Q.text" = "Твитер";
+

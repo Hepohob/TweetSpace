@@ -16,7 +16,9 @@
 		473A1BB61E11DF7D0069D5DC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */; };
 		473A1BBA1E13136C0069D5DC /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BB91E13136C0069D5DC /* History.swift */; };
 		473A1BBC1E1316D20069D5DC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */; };
+		473A1BBE1E1322180069D5DC /* TweetersTableViewСontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1BBD1E1322180069D5DC /* TweetersTableViewСontroller.swift */; };
 		477070C61E0FB2AF00C6156B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 477070C41E0FB2AF00C6156B /* Model.xcdatamodeld */; };
+		4777FFE01E1E50D40028207D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4777FFE21E1E50D40028207D /* InfoPlist.strings */; };
 		4779058B1E0DA70100FB5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779058A1E0DA70100FB5AA9 /* AppDelegate.swift */; };
 		477905901E0DA70100FB5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4779058E1E0DA70100FB5AA9 /* Main.storyboard */; };
 		477905921E0DA70100FB5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477905911E0DA70100FB5AA9 /* Assets.xcassets */; };
@@ -51,7 +53,13 @@
 		473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		473A1BB91E13136C0069D5DC /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		473A1BBD1E1322180069D5DC /* TweetersTableViewСontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TweetersTableViewСontroller.swift"; sourceTree = "<group>"; };
 		477070C51E0FB2AF00C6156B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4777FFDA1E1E4AA40028207D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4777FFDB1E1E4AA40028207D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4777FFDC1E1E4ABC0028207D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4777FFDD1E1E4ABC0028207D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		4777FFE11E1E50D40028207D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		477905871E0DA70100FB5AA9 /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4779058A1E0DA70100FB5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4779058F1E0DA70100FB5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 				473109501E117E1300FF89CE /* MentionsTableViewController.swift */,
 				473A1BB51E11DF7D0069D5DC /* ImageViewController.swift */,
 				473A1BBB1E1316D20069D5DC /* HistoryTableViewController.swift */,
+				473A1BBD1E1322180069D5DC /* TweetersTableViewСontroller.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 		4779059C1E0DA71300FB5AA9 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				4777FFE21E1E50D40028207D /* InfoPlist.strings */,
 				4779058A1E0DA70100FB5AA9 /* AppDelegate.swift */,
 				477905911E0DA70100FB5AA9 /* Assets.xcassets */,
 				477905931E0DA70100FB5AA9 /* LaunchScreen.storyboard */,
@@ -210,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				477905951E0DA70100FB5AA9 /* LaunchScreen.storyboard in Resources */,
+				4777FFE01E1E50D40028207D /* InfoPlist.strings in Resources */,
 				477905921E0DA70100FB5AA9 /* Assets.xcassets in Resources */,
 				477905901E0DA70100FB5AA9 /* Main.storyboard in Resources */,
 			);
@@ -226,6 +237,7 @@
 				4731094C1E0FDB8400FF89CE /* Tweet+CoreDataProperties.swift in Sources */,
 				4779059E1E0DA77E00FB5AA9 /* TweetTableViewController.swift in Sources */,
 				477905B41E0DBC1300FB5AA9 /* TweetTableViewCell.swift in Sources */,
+				473A1BBE1E1322180069D5DC /* TweetersTableViewСontroller.swift in Sources */,
 				4731094E1E0FDB8400FF89CE /* TwitterUser+CoreDataProperties.swift in Sources */,
 				473109511E117E1300FF89CE /* MentionsTableViewController.swift in Sources */,
 				4731094D1E0FDB8400FF89CE /* TwitterUser+CoreDataClass.swift in Sources */,
@@ -241,10 +253,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4777FFE21E1E50D40028207D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4777FFE11E1E50D40028207D /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		4779058E1E0DA70100FB5AA9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4779058F1E0DA70100FB5AA9 /* Base */,
+				4777FFDB1E1E4AA40028207D /* ru */,
+				4777FFDD1E1E4ABC0028207D /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -253,6 +275,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				477905941E0DA70100FB5AA9 /* Base */,
+				4777FFDA1E1E4AA40028207D /* ru */,
+				4777FFDC1E1E4ABC0028207D /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -264,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -314,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
