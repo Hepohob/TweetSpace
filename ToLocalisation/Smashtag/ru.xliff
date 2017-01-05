@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+    <file original="Smashtag/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+        <header>
+            <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"></tool>
+        </header>
+        <body></body>
+    </file>
+    <file original="Smashtag/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+        <header>
+            <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"></tool>
+        </header>
+        <body>
+            <trans-unit id="FcW-eJ-asD.title">
+                <source>Root View Controller</source>
+                <target>Корневой контроллер</target>
+                <note>Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "FcW-eJ-asD";</note>
+            </trans-unit>
+            <trans-unit id="NFX-xq-ocA.text">
+                <source>Created</source>
+                <target>Создано</target>
+                <note>Class = "UILabel"; text = "Created"; ObjectID = "NFX-xq-ocA";</note>
+            </trans-unit>
+            <trans-unit id="U8O-QI-I2y.text">
+                <source>Tweet Text</source>
+                <target>Текст твита</target>
+                <note>Class = "UILabel"; text = "Tweet Text"; ObjectID = "U8O-QI-I2y";</note>
+            </trans-unit>
+            <trans-unit id="Uda-vg-PO0.title">
+                <source>Tweeters</source>
+                <target>Твитер</target>
+                <note>Class = "UIBarButtonItem"; title = "Tweeters"; ObjectID = "Uda-vg-PO0";</note>
+            </trans-unit>
+            <trans-unit id="V8x-zf-5kv.text">
+                <source>Title</source>
+                <target>Заголовок</target>
+                <note>Class = "UILabel"; text = "Title"; ObjectID = "V8x-zf-5kv";</note>
+            </trans-unit>
+            <trans-unit id="ZZY-1p-6tJ.placeholder">
+                <source>Twitter search text</source>
+                <target>Текст для поиска</target>
+                <note>Class = "UITextField"; placeholder = "Twitter search text"; ObjectID = "ZZY-1p-6tJ";</note>
+            </trans-unit>
+            <trans-unit id="vo1-q5-mMs.text">
+                <source>Title</source>
+                <target>Заголовок</target>
+                <note>Class = "UILabel"; text = "Title"; ObjectID = "vo1-q5-mMs";</note>
+            </trans-unit>
+            <trans-unit id="zO3-tV-c0Q.text">
+                <source>Tweeter</source>
+                <target>Твитер</target>
+                <note>Class = "UILabel"; text = "Tweeter"; ObjectID = "zO3-tV-c0Q";</note>
+            </trans-unit>
+        </body>
+    </file>
+    <file original="Smashtag/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+        <header>
+            <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"></tool>
+        </header>
+        <body>
+            <trans-unit id="CFBundleName">
+                <source>$(PRODUCT_NAME)</source>
+            </trans-unit>
+            <trans-unit id="CFBundleShortVersionString">
+                <source>1.0</source>
+            </trans-unit>
+        </body>
+    </file>
+    <file original="Smashtag/Localizable.strings" source-language="en" datatype="plaintext" target-language="ru">
+        <header>
+            <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"></tool>
+        </header>
+        <body>
+            <trans-unit id="Hashtags">
+                <source>Hashtags</source>
+                <note>Title 'Hashtags' in MentionsTableViewController section.</note>
+                <target>Хэштеги</target>
+            </trans-unit>
+            <trans-unit id="History">
+                <source>History</source>
+                <target>История</target>
+                <note>Title 'History' in history view controller.</note>
+            </trans-unit>
+            <trans-unit id="Images">
+                <source>Images</source>
+                <note>Title 'Images' in MentionsTableViewController section.</note>
+                <target>Изображения</target>
+            </trans-unit>
+            <trans-unit id="Users">
+                <source>Users</source>
+                <note>Title 'Users' in MentionsTableViewController section.</note>
+                <target>Пользователи</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

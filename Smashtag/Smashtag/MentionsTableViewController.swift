@@ -13,11 +13,15 @@ class MentionsTableViewController: UITableViewController {
 
     // MARK: - Public API
 
+    private let imagesType = NSLocalizedString("Images", comment: "Title 'Images' in MentionsTableViewController section.")
+    private let hashtagsType = NSLocalizedString("Hashtags", comment: "Title 'Hashtags' in MentionsTableViewController section.")
+    private let usersType = NSLocalizedString("Users", comment: "Title 'Users' in MentionsTableViewController section.")
+    
     var tweet: Twitter.Tweet? {
         didSet {
             title = tweet?.user.screenName
             if let media = tweet?.media, media.count > 0 {
-                mentionSections.append(MentionSection(type: "Images",
+                mentionSections.append(MentionSection(type: imagesType,
                                                       mentions: media.map { MentionItem.image($0.url, $0.aspectRatio) }))
             }
             if let urls = tweet?.urls, urls.count > 0 {
@@ -25,11 +29,11 @@ class MentionsTableViewController: UITableViewController {
                                                       mentions: urls.map { MentionItem.keyword($0.keyword) }))
             }
             if let hashtags = tweet?.hashtags, hashtags.count > 0 {
-                mentionSections.append(MentionSection(type: "Hashtags",
+                mentionSections.append(MentionSection(type: hashtagsType,
                                                       mentions: hashtags.map { MentionItem.keyword($0.keyword) }))
             }
             if let users = tweet?.userMentions, users.count > 0 {
-                mentionSections.append(MentionSection(type: "Users",
+                mentionSections.append(MentionSection(type: usersType,
                                                       mentions: users.map { MentionItem.keyword($0.keyword) }))
             }
         }
