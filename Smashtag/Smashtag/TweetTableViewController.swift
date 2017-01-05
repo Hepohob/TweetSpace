@@ -60,7 +60,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
-        searchText = "#picture"
+        searchText = "#stanford"
     }
 
     // MARK: - Table view data source

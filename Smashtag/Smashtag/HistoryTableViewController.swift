@@ -20,7 +20,12 @@ class HistoryTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        self.title = "History"
+        updateUI()
+    }
+    
+    private func updateUI() {
+        let titleText = NSLocalizedString("History", comment: "Title 'History' in history view controller.")
+        self.title = titleText
     }
     
     override func viewWillAppear(_ animated: Bool) {
