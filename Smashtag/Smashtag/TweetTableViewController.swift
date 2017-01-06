@@ -98,14 +98,12 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return tweets.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return tweets[section].count
     }
 
@@ -131,6 +129,10 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        searchForTweets()
+    }
+    
     // MARK: - Navigation
 
     override func shouldPerformSegue(withIdentifier identifier: String?,
@@ -154,14 +156,15 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
                 let tweetCell = sender as? TweetTableViewCell {
                 mtvc.tweet = tweetCell.tweet
             }
-        }
-        else if segue.identifier == Storyboard.TwittersControllerSegue {
-            if let tweetersTVC = segue.destination as? TweetersTableViewController {
-                tweetersTVC.mention = searchText
-                tweetersTVC.managedObjectContext = managedObjectContext
+            else if segue.identifier == Storyboard.TwittersControllerSegue {
+                if let tweetersTVC = segue.destination as? TweetersTableViewController {
+                    tweetersTVC.mention = searchText
+                    tweetersTVC.managedObjectContext = managedObjectContext
+                }
             }
         }
 
     }
 
+    
 }
