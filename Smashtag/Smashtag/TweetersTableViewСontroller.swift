@@ -7,8 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
-class TweetersTableViewController: UITableViewController {
+class TweetersTableViewController: CoreDataTableViewController {
+    
+    //MARK: Model
+    
+    var mention:String? { didSet{ updateUI() }}
+    var managedObjectContext:NSManagedObjectContext? { didSet{ updateUI() }}
+    
+    //MARK: UI setiings
+    
+    private func updateUI() {
+        
+    }
+    
     
 //    var fetchedResultController:NSFetchedResultController {
 //        

@@ -19,7 +19,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     private struct Storyboard {
         static let TweetCellIdentifier = "Tweet"
         static let MentionsIdentifier = "Mentions"
-        
+        static let TwittersControllerSegue = "TweetersMentioningSearchTerm"
     }
     
     private var twitterRequest:Twitter.Request? {
@@ -76,16 +76,15 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
             }
         }
         printDatabaseStatistics()
-        print("Done printing database statistics")
     }
     
     private func printDatabaseStatistics() {
         managedObjectContext?.perform({
-            let results = try? self.managedObjectContext!.fetch(NSFetchRequest(entityName: "TwitterUser"))
-            print("\((results?.count)!) TwitterUsers")
-            // a more efficient way to count objects ...
+            let userCount = try! self.managedObjectContext!.count(for: NSFetchRequest(entityName: "TwitterUser"))
+            print("\(userCount) TwitterUsers")
             let tweetCount = try! self.managedObjectContext!.count(for: NSFetchRequest(entityName: "Tweet"))
             print("\(tweetCount) Tweets")
+            print("Done printing database statistics")
         })
     }
 
@@ -154,15 +153,15 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
                 let mtvc = segue.destination as? MentionsTableViewController,
                 let tweetCell = sender as? TweetTableViewCell {
                 mtvc.tweet = tweetCell.tweet
-                
             }
-//            else if identifier == Storyboard.ImagesIdentifier {
-//                if let icvc = segue.destination as? ImageCollectionViewController {
-//                    icvc.tweets = tweets
-//                    icvc.title = "Images: \(searchText!)"
-//                }
-//            }
         }
+        else if segue.identifier == Storyboard.TwittersControllerSegue {
+            if let tweetersTVC = segue.destination as? TweetersTableViewController {
+                tweetersTVC.mention = searchText
+                tweetersTVC.managedObjectContext = managedObjectContext
+            }
+        }
+
     }
 
 }
