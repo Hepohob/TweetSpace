@@ -41,9 +41,6 @@ class TweetersTableViewController: CoreDataTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TwitterUserCell", for: indexPath)
-        
-        cell.backgroundColor = UIColor.lightGray
-        
         if let twitterUser = fetchedResultsController?.object(at: indexPath) as? TwitterUser {
             var screenName: String?
             twitterUser.managedObjectContext?.performAndWait {
