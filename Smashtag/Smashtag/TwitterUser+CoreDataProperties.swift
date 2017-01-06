@@ -2,8 +2,8 @@
 //  TwitterUser+CoreDataProperties.swift
 //  Smashtag
 //
-//  Created by Алексей Неронов on 25.12.16.
-//  Copyright © 2016 Алексей Неронов. All rights reserved.
+//  Created by Aleksei Neronov on 05.01.17.
+//  Copyright © 2017 Aleksei Neronov. All rights reserved.
 //
 
 import Foundation

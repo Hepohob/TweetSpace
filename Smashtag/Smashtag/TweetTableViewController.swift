@@ -8,8 +8,13 @@
 
 import UIKit
 import Twitter
+import CoreData
 
 class TweetTableViewController: UITableViewController, UITextFieldDelegate {
+    
+    //MARK: Model
+    
+    var managedObjectContext: NSManagedObjectContext? = (UIApplication.shared.delegate as? AppDelegate)?.managedObjectContext
     
     private struct Storyboard {
         static let TweetCellIdentifier = "Tweet"
@@ -49,12 +54,42 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
                     if request == weakself?.lastTwitterRequest {
                         if !newTweets.isEmpty {
                             weakself?.tweets.insert(newTweets, at: 0)
+                            weakself?.updateDatabase(newTweets)
                         }
                     }
                 }
             }
         }
     }
+    
+    //MARK: Database working
+    
+    private func updateDatabase(_ newTweets:[Twitter.Tweet] ) {
+        managedObjectContext?.perform {
+            for tweeterInfo in newTweets {
+                _ = Tweet.tweetWithTwitterInfo(twitterInfo: tweeterInfo, inManagedObjectContext:self.managedObjectContext!)
+            }
+            do {
+                try self.managedObjectContext?.save()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        printDatabaseStatistics()
+        print("Done printing database statistics")
+    }
+    
+    private func printDatabaseStatistics() {
+        managedObjectContext?.perform({
+            let results = try? self.managedObjectContext!.fetch(NSFetchRequest(entityName: "TwitterUser"))
+            print("\((results?.count)!) TwitterUsers")
+            // a more efficient way to count objects ...
+            let tweetCount = try! self.managedObjectContext!.count(for: NSFetchRequest(entityName: "Tweet"))
+            print("\(tweetCount) Tweets")
+        })
+    }
+
+    //MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

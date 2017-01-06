@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="58" width="375" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Hs-tD-u8U" id="Mzi-hc-qM1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-ht-AtH">
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="332" y="672"/>
         </scene>
-        <!--Tweeters Table View ontroller-->
+        <!--Tweeters Table View Controller-->
         <scene sceneID="ETR-3m-d8d">
             <objects>
-                <tableViewController id="Ecg-CJ-1l4" customClass="TweetersTableView_ontroller" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ecg-CJ-1l4" customClass="TweetersTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y4c-qt-WX0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21f-zR-kLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202" y="-767"/>
+            <point key="canvasLocation" x="1862" y="-691"/>
         </scene>
         <!--Mentions Table View Controller-->
         <scene sceneID="f43-6j-Ugt">
@@ -210,7 +210,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="847-rJ-6mz" id="i90-l2-YJn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-Yz-v4U">
